@@ -1,0 +1,41 @@
+.navbar {
+  position: sticky;
+  top: 54px;
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__dropdown{
+    position: relative;
+  }
+  &__dropdown_open .navbar__dropdown_list {
+    display: block;
+  }
+  &__dropdown_trigger {
+    cursor: pointer;
+  }
+
+  &__dropdown_list {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+  }
+
+
+  &__dropdown_link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+}
